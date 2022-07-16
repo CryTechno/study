@@ -4,10 +4,25 @@ $(document).ready(function(){
             speed: 1200,
             adaptiveHeight: true,
             prevArrow: '<button type="button" class="slick-prev"><img src = "img/icons/left-arrow.png"></button>',
-            nextArrow: '<button type="button" class="slick-next"><img src = "img/icons/right-arrow.png"></button>'
-    });
+            nextArrow: '<button type="button" class="slick-next"><img src = "img/icons/right-arrow.png"></button>',
+            responsive: [
+              {
+                breakpoint: 992,
+                settings: {
+                  arrows: false,
+                  dots: true
+
+                }
+              },
+            ]
+          });
 
   $('ul.catalogy__tabs').on('click', 'li:not(.catalogy__tab_active)', function() {
+    $(this)
+      .addClass('catalogy__tab_active').siblings().removeClass('catalogy__tab_active')
+      .closest('div.container').find('div.catalogy__content').removeClass('catalogy__content_active').eq($(this).index()).addClass('catalogy__content_active');
+  });
+  $('ul.catalogy__tabs-xs').on('click', 'li:not(.catalogy__tab_active)', function() {
     $(this)
       .addClass('catalogy__tab_active').siblings().removeClass('catalogy__tab_active')
       .closest('div.container').find('div.catalogy__content').removeClass('catalogy__content_active').eq($(this).index()).addClass('catalogy__content_active');

@@ -1,0 +1,162 @@
+@media (max-width: 1199px)
+    .header
+        &__contacts
+            a
+                font-size: 14px
+    .footer
+        &__info
+            padding: 25px
+            width: 280px
+            height: 235px
+@media (max-width: 991px)
+    .consultation
+        padding: 70px 0 70px 70px
+    .title
+        &_left
+            font-size: 28px
+            line-height: 38px
+    .carousel
+        &__inner
+            width: 530px
+            margin: 0 auto
+            img
+                max-width: 100%
+            .slick-dots
+                position: absolute
+                bottom: -25px
+                display: block
+                width: 100%
+                padding: 0
+                margin: 0
+                list-style: none
+                text-align: center
+                li
+                    position: relative
+                    display: inline-block
+                    width: 20px
+                    height: 20px
+                    margin: 0 5px
+                    padding: 0
+                    cursor: pointer
+                    button
+                        font-size: 0
+                        line-height: 0
+                        display: block
+                        width: 20px
+                        height: 20px
+                        padding: 5px
+                        cursor: pointer
+                        color: transparent
+                        border: 0
+                        outline: none
+                        background: transparent
+                        &:before
+                            content: '•'
+                            font-size: 45px
+                            line-height: 20px
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 20px
+                            height: 20px
+                            text-align: center
+                            color: rgba(0, 0, 0, .75)
+                .slick-active
+                    button
+                        &:before
+                            color: $base-color
+    .reviews
+        &__content
+            display: none
+        &__item
+            margin: 0
+            max-width: 300px
+        &__content-md
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+        &__name
+            margin-top: 10px
+        &__desc
+            margin-top: 10px
+            text-align: justify
+        &__img
+            display: block
+            margin: 0 auto
+            max-width: 100px
+        
+@media (max-width: 767px)
+    .promo
+        &__header
+            font-size: 38px
+            text-align: center
+        &__icons
+            margin-top: 40px
+    .header
+        &__contacts
+            margin-top: 20px
+            display: flex
+            justify-content: center
+            align-items: center
+    .title
+        &_left
+            text-align: center
+            font-size: 32px
+    .catalogy
+        &__tab
+            font-size: 17px
+    .consultation
+        padding: 70px 0
+        min-height: 600px
+        &__descr
+            text-align: center
+    #consultation-form
+        margin: 0 auto
+        margin-top: 38px
+    .catalogy
+        &__content
+            justify-content: center
+@media (max-width: 575px)
+    .header
+        &__official
+            margin-top: 20px 
+            font-size: 19px
+            span
+                font-size: 20px
+        &__contacts
+            display: none
+            button
+                display: none
+            a
+                font-size: 16px
+    .carousel
+        &__inner
+            width: 280px
+        .promo
+            &__icons
+                margin-top: 40px
+    .button
+        &__main
+            margin: 0 auto
+            max-width:250px
+    .feed-form
+        max-width: 250px
+        &_mt26
+            margin: 0 auto
+            margin-top: 26px
+    .modal
+        width: 300px
+        &__close
+            display: none
+    .title
+        &_left
+            text-align: center
+            font-size: 25px
+            line-height: 26px
+    .catalogy
+        &__tabs
+            display: none
+        &__tabs-xs
+            display: flex
+        &__tab
+            font-size: 13px
